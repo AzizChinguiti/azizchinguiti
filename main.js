@@ -7,26 +7,25 @@ var celebrities = [
     { name: "Frances McDormand", age: 66, yearsOfActing: 41, oscarsWon: 3 }
     
 ];
-var highestOscarsCelebrity // my variable to store the celebrity with the highest Oscars
+var highestOscarsCelebrity // this is my variable to store the celebrity with the highest Oscars
 
 function showCelebrity() {
-    var selectBox = document.getElementById("celebrityList")
-    var selectedValue = selectBox.options[selectBox.selectedIndex].value
-    var celebrityInfo = document.getElementById("celebrityInfo")
-   var celebrityImage = document.getElementById("celebrityImage")
+    var selectBox =document.getElementById("celebrityList")
+    var selectedValue =selectBox.options[selectBox.selectedIndex].value
+    var celebrityInfo =document.getElementById("celebrityInfo")
+   var celebrityImage =document.getElementById("celebrityImage")
   
- // Find the selected celebrity in the array
- var selectedCelebrity;
- for (var i = 0; i < celebrities.length; i++) {
-     if (celebrities[i].name === selectedValue) {
-         selectedCelebrity = celebrities[i]
+ //Find the selected celebrity in the array
+ var selectedCelebrity
+ for (var i=0 ;i<celebrities.length;i++) {
+     if (celebrities[i].name===selectedValue) {
+         selectedCelebrity=celebrities[i]
          break;
      }
  }
-
-    // Define the image URL based on the selected celebrity
+// Define the image URL based on the selected celebrity
     var imageUrl = getImageUrl(selectedValue)
-// Set the image source and highlight the image
+//Set the image source and highlight the image
     celebrityImage.innerHTML = '<img src="' + imageUrl + '" alt="' + selectedValue + '" onclick="redirectToCelebrityPage()" style="width: 300px; height: 300px;">'    // Display additional information
     celebrityInfo.innerHTML = '<p>Age: ' + selectedCelebrity.age + '</p>' +
   '<p>Years of Acting: ' + selectedCelebrity.yearsOfActing + '</p>' +
@@ -50,13 +49,11 @@ if (celebrityName=="Daniel Day-Lewis")
 return "https://static.wikia.nocookie.net/oscars/images/2/2e/DanielDayLewis2.jpg"
 if (celebrityName=="Frances McDormand")
 return "https://cdn.justjared.com/wp-content/uploads/2018/03/mcdormand-inclusion/frances-mcdormand-inclusion-rider-oscars-2018-03.jpg"
-else return""
-
 }
 
 function redirectToCelebrityPage() {
-    //Redirect to another link when the image is clicked
-    window.location.href = "https://www.oscars.org/oscars"
+//To Redirect to another link when the image is clicked
+    window.location.href ="https://www.oscars.org/oscars"
 }
 
 
@@ -68,7 +65,7 @@ function sortCelebrities() {
         window.open("https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Daniel_Day-Lewis", "_blank") // this line open a new external window after a specific time
         clearInterval(intervalId); // this is used to stop the interval after opening the external website
     }, 1500)
-    // Sort celebrities array based on Oscars won in descending order
+    //Sort celebrities array based on Oscars won in descending order
     celebrities.sort(function (a, b) {
         if (a.oscarsWon === b.oscarsWon) {
             return a.yearsOfActing - b.yearsOfActing
@@ -80,7 +77,7 @@ function sortCelebrities() {
        
 
 
-       // Update the dropdown list with sorted names
+       // to Update the dropdown list with sorted names
        var selectBox = document.getElementById("celebrityList")
        selectBox.innerHTML = ""
 
@@ -94,7 +91,7 @@ function sortCelebrities() {
     // Show the first celebrity in the sorted list
     showCelebrity()
 }
- // Replace the following information with the actual details of your celebrities
+ // Replace the following information with the actual details of celebrities
 function getCelebrityInfo(celebrityName) {
    if (celebrityName=="Tom Hanks")
      return { age: 65, yearsOfActing: 40, oscarsWon: 2 }
