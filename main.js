@@ -7,7 +7,7 @@ var celebrities = [
     { name: "Frances McDormand", age: 66, yearsOfActing: 41, oscarsWon: 3 }
     
 ];
-var highestOscarsCelebrity // Variable to store the celebrity with the highest Oscars
+var highestOscarsCelebrity // my variable to store the celebrity with the highest Oscars
 
 function showCelebrity() {
     var selectBox = document.getElementById("celebrityList")
@@ -26,17 +26,12 @@ function showCelebrity() {
 
     // Define the image URL based on the selected celebrity
     var imageUrl = getImageUrl(selectedValue)
-
-       // Get additional information about the celebrity
-      //var info = getCelebrityInfo(selectedValue);
-
-    // Set the image source and highlight the image
+// Set the image source and highlight the image
     celebrityImage.innerHTML = '<img src="' + imageUrl + '" alt="' + selectedValue + '" onclick="redirectToCelebrityPage()" style="width: 300px; height: 300px;">'    // Display additional information
     celebrityInfo.innerHTML = '<p>Age: ' + selectedCelebrity.age + '</p>' +
-                              '<p>Years of Acting: ' + selectedCelebrity.yearsOfActing + '</p>' +
-                              '<p>Oscars Won: ' + selectedCelebrity.oscarsWon + '</p>'
-    
-                          highestOscarsCelebrity = selectedCelebrity
+  '<p>Years of Acting: ' + selectedCelebrity.yearsOfActing + '</p>' +
+   '<p>Oscars Won: ' + selectedCelebrity.oscarsWon + '</p>'
+ highestOscarsCelebrity = selectedCelebrity
 
 }
 
@@ -60,7 +55,7 @@ else return""
 }
 
 function redirectToCelebrityPage() {
-    // Redirect to another link when the image is clicked
+    //Redirect to another link when the image is clicked
     window.location.href = "https://www.oscars.org/oscars"
 }
 
@@ -80,7 +75,7 @@ function sortCelebrities() {
         }
         return b.oscarsWon - a.oscarsWon
     })
-      // Open an external website automatically (you can replace "https://example.com" with the actual URL)
+ 
       
        
 
