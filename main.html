@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Actors Spotlight</title>
+</head>
+<body>
+    <div class="container" style="background-color: darkgray">
+        <h1>Celebrity Viewer</h1>
+        
+        <select id="celebrityList" onchange="showCelebrity()">
+            <option value="Tom Hanks">Tom Hanks</option>
+            <option value="Meryl Streep">Meryl Streep</option>
+            <option value="Leonardo DiCaprio">Leonardo DiCaprio</option>
+            <option value="Daniel Day-Lewis">Daniel Day-Lewis</option>
+            <option value="Denzel Washington">Denzel Washington</option>
+            <option value="Frances McDormand">Frances McDormand</option>
+        </select>
+        <button onclick="sortCelebrities()" style="border-color: blueviolet;">Sort Actors by Oscars Wins</button>
+        
+        <div id="celebrityInfo"></div>
+        <div id="celebrityImage"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
