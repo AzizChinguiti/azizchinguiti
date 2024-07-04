@@ -3,7 +3,7 @@ I'm Aziz, a passionate developer diving into the world of coding! 👨‍💻✨
 Skills 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,git,html,css,linux,react,reactnative,tailwindcss,mysql,mongodb" />
+    <img src="https://skillicons.dev/icons?i=js,git,html,css,linux,react,tailwindcss,mysql,mongodb" />
   </a>
 </p>
 
