@@ -1,5 +1,10 @@
 ### Hi there 👋
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+Skills 
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,html,css,linux,react" />
+  </a>
+</p>
 <!--
 **AzizChinguiti/azizchinguiti** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
