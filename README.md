@@ -6,10 +6,11 @@ Skills
     <img src="https://skillicons.dev/icons?i=js,git,html,css,linux,react,reactnative,tailwindcss,mysql,mongodb" />
   </a>
 </p>
-Socials and Contact Me
-📫 How to reach me: [chinguitiaziz@gmail.com] 
-•
-[https://www.linkedin.com/in/chinguiti-aziz-268059213/]
+
+### Socials and Contact Me
+- 📫 How to reach me:
+  - [LinkedIn](https://www.linkedin.com/in/chinguiti-aziz-268059213)
+  - [Email](mailto:chinguitiaziz@gmail.com)
 <!--
 **AzizChinguiti/azizchinguiti** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
